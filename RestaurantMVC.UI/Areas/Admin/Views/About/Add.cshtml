@@ -1,0 +1,46 @@
+﻿@model AboutCreateViewModel
+
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="block block-rounded">
+    <div class="block-header block-header-default">
+        <h3 class="block-title">Add About</h3>
+    </div>
+    <div class="block-content">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+                <form asp-area="Admin" asp-controller="About" asp-action="Add" method="post">
+                    <div class="mb-4">
+                        <label asp-for="Title" class="form-label" for="one-ecom-product-name"></label>
+                        <input type="text" class="form-control" id="one-ecom-product-name" name="Title" asp-for="Title">
+                    </div>
+                    <div class="mb-4">
+                        <label asp-for="Description" class="form-label"></label>
+                        <textarea id="js-ckeditor" asp-for="Description" name="Description"></textarea>
+                    </div>
+                    <div class="mb-4">
+                        <button type="submit" class="btn btn-alt-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+<script>
+    ClassicEditor
+        .create(document.querySelector('#js-ckeditor'))
+        .then(editor => {
+            editor.model.document.on('change:data', () => {
+                const data = editor.getData();
+                console.log(data);
+            });
+        })
+        .catch(error => {
+            console.error(error);
+        });
+</script>

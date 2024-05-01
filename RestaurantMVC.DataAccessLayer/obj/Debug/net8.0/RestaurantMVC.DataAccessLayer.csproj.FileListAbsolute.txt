@@ -1,0 +1,17 @@
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.DataAccessLayer\bin\Debug\net8.0\RestaurantMVC.DataAccessLayer.deps.json
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.DataAccessLayer\bin\Debug\net8.0\RestaurantMVC.DataAccessLayer.runtimeconfig.json
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.DataAccessLayer\bin\Debug\net8.0\RestaurantMVC.DataAccessLayer.dll
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.DataAccessLayer\bin\Debug\net8.0\RestaurantMVC.DataAccessLayer.pdb
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.DataAccessLayer\bin\Debug\net8.0\RestaurantMVC.Core.dll
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.DataAccessLayer\bin\Debug\net8.0\RestaurantMVC.Core.pdb
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.DataAccessLayer\obj\Debug\net8.0\RestaurantMVC.DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.DataAccessLayer\obj\Debug\net8.0\RestaurantMVC.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.DataAccessLayer\obj\Debug\net8.0\RestaurantMVC.DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.DataAccessLayer\obj\Debug\net8.0\RestaurantMVC.DataAccessLayer.AssemblyInfo.cs
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.DataAccessLayer\obj\Debug\net8.0\RestaurantMVC.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.DataAccessLayer\obj\Debug\net8.0\RestaurantMVC.DataAccessLayer.csproj.CopyComplete
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.DataAccessLayer\obj\Debug\net8.0\RestaurantMVC.DataAccessLayer.dll
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.DataAccessLayer\obj\Debug\net8.0\refint\RestaurantMVC.DataAccessLayer.dll
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.DataAccessLayer\obj\Debug\net8.0\RestaurantMVC.DataAccessLayer.pdb
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.DataAccessLayer\obj\Debug\net8.0\RestaurantMVC.DataAccessLayer.genruntimeconfig.cache
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.DataAccessLayer\obj\Debug\net8.0\ref\RestaurantMVC.DataAccessLayer.dll

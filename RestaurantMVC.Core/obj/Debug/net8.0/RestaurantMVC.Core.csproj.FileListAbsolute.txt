@@ -1,0 +1,14 @@
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.Core\bin\Debug\net8.0\RestaurantMVC.Core.deps.json
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.Core\bin\Debug\net8.0\RestaurantMVC.Core.runtimeconfig.json
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.Core\bin\Debug\net8.0\RestaurantMVC.Core.dll
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.Core\bin\Debug\net8.0\RestaurantMVC.Core.pdb
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.Core\obj\Debug\net8.0\RestaurantMVC.Core.csproj.AssemblyReference.cache
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.Core\obj\Debug\net8.0\RestaurantMVC.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.Core\obj\Debug\net8.0\RestaurantMVC.Core.AssemblyInfoInputs.cache
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.Core\obj\Debug\net8.0\RestaurantMVC.Core.AssemblyInfo.cs
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.Core\obj\Debug\net8.0\RestaurantMVC.Core.csproj.CoreCompileInputs.cache
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.Core\obj\Debug\net8.0\RestaurantMVC.Core.dll
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.Core\obj\Debug\net8.0\refint\RestaurantMVC.Core.dll
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.Core\obj\Debug\net8.0\RestaurantMVC.Core.pdb
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.Core\obj\Debug\net8.0\RestaurantMVC.Core.genruntimeconfig.cache
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.Core\obj\Debug\net8.0\ref\RestaurantMVC.Core.dll

@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Restaurant MVC</h1>
+<h3>Yönetim Paneline Hoşgeldiniz @User.Identity!.Name!.ToUpper()</h3>
+
+<div class="row items-push">
+        @await Component.InvokeAsync("ProductCount")
+        @await Component.InvokeAsync("CategoryCount")
+        @await Component.InvokeAsync("StaffCount")
+        @await Component.InvokeAsync("LatestProducts")
+        @await Component.InvokeAsync("LatestStaffs")
+</div>

@@ -1,0 +1,75 @@
+﻿@model ProductViewModel
+
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="block block-rounded">
+    <div class="block-header block-header-default">
+        <h3 class="block-title">Update Product</h3>
+    </div>
+    <div class="block-content">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+                <form asp-area="Admin" asp-controller="Product" asp-action="Update" method="post" enctype="multipart/form-data">
+                    <input type="hidden" asp-for="@Model.Id"/>
+                    <div class="mb-4">
+                        <label asp-for="Name" class="form-label" for="one-ecom-product-name"></label>
+                        <input type="text" class="form-control" id="one-ecom-product-name" name="Name" asp-for="Name">
+                    </div>
+                    <div class="mb-4">
+                        <label asp-for="Price" class="form-label" for="one-ecom-product-price"></label>
+                        <input type="text" class="form-control" id="one-ecom-product-price" name="Price" asp-for="Price">
+                    </div>
+                    <div class="mb-4">
+                        <label asp-for="Description" class="form-label"></label>
+                        <textarea id="js-ckeditor" asp-for="Description" name="Description"></textarea>
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label" for="one-ecom-product-category" asp-for="CategoryId"></label>
+                        <select asp-for="CategoryId" class="js-select2 form-select" id="one-ecom-product-category" name="CategoryId" style="width: 100%;">
+                            <option value="">-- Kategori Seçin --</option>
+                            @foreach (var category in ViewBag.Categories)
+                            {
+                                <option value="@category.Id">@category.Name</option>
+                            }
+                        </select>
+                        <span asp-validation-for="CategoryId" class="text-danger"></span>
+                    </div>
+                    <div class="mb-4">
+                        <input type="file" asp-for="ImageURL" class="form-control">
+                        @if (Model.ImageURL != null)
+                        {
+                            <img src="~/upload_img/@Model.ImageURL" class="form-control" alt="@Model.Name" style="max-width: 200px; max-height: 200px;" />
+                        }
+                        else
+                        {
+                            <img src="~/upload_img/default_food.png" class="form-control" alt="@Model.Name" style="max-width: 200px; max-height: 200px;" />
+                        }
+                        <span asp-validation-for="ImageURL" class="text-danger"></span>
+                    </div>
+                    <div class="mb-4">
+                        <button type="submit" class="btn btn-alt-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+<script>
+    ClassicEditor
+        .create(document.querySelector('#js-ckeditor'))
+        .then(editor => {
+            editor.model.document.on('change:data', () => {
+                const data = editor.getData();
+                console.log(data);
+            });
+        })
+        .catch(error => {
+            console.error(error);
+        });
+</script>
+

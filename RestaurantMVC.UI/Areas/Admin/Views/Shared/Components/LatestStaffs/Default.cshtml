@@ -1,0 +1,36 @@
+﻿@model IEnumerable<StaffVCViewModel>
+
+<div class="col-xl-6">
+    <div class="block block-rounded h-100 mb-0">
+        <div class="block-header block-header-default">
+            <h3 class="block-title">Latest Staffs</h3>
+            <div class="block-options">
+                <button type="button" class="btn-block-option" data-toggle="block-option" data-action="state_toggle" data-action-mode="demo">
+                    <i class="si si-refresh"></i>
+                </button>
+            </div>
+        </div>
+        <div class="block-content">
+            <table class="table table-borderless table-striped table-vcenter fs-sm">
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="text-center" style="width: 100px;">
+                                <a class="fw-semibold" asp-area="Admin" asp-controller="Staff" asp-action="Update" asp-route-id="@item.Id">@item.Id</a>
+                            </td>
+                            <td>
+                                <a asp-area="Admin" asp-controller="Staff" asp-action="Update" asp-route-id="@item.Id">@item.FirstName @item.LastName</a>
+                            </td>
+                            <td class="d-none d-sm-table-cell text-center">
+                                <div class="text-warning">
+                                    @item.Title
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

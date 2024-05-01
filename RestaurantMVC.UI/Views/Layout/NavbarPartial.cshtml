@@ -1,0 +1,85 @@
+﻿@{
+    string controllerName = ViewContext.RouteData.Values["Controller"].ToString();
+    string actionName = ViewContext.RouteData.Values["Action"].ToString();
+}
+@{
+    if (ViewContext.RouteData.Values["Controller"].ToString() == "Home" && ViewContext.RouteData.Values["Action"].ToString() == "Index")
+    {
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Restoran</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a asp-area="" asp-controller="Home" asp-action="Index" class="nav-item nav-link @(ViewContext.RouteData.Values["Controller"]!.ToString() == "Home" && ViewContext.RouteData.Values["Action"]!.ToString() == "Index" ? "active" : "")">Home</a>
+                        <a asp-area="" asp-controller="About" asp-action="Index" class="nav-item nav-link @(ViewContext.RouteData.Values["Controller"]!.ToString() == "About" && ViewContext.RouteData.Values["Action"]!.ToString() == "Index" ? "active" : "")">About</a>
+                        <a asp-area="" asp-controller="Service" asp-action="Index" class="nav-item nav-link @(ViewContext.RouteData.Values["Controller"]!.ToString() == "Service" && ViewContext.RouteData.Values["Action"]!.ToString() == "Index" ? "active" : "")">Service</a>
+                        <a asp-area="" asp-controller="Menu" asp-action="Index" class="nav-item nav-link @(ViewContext.RouteData.Values["Controller"]!.ToString() == "Menu" && ViewContext.RouteData.Values["Action"]!.ToString() == "Index" ? "active" : "")">Menu</a>
+                        <a asp-area="" asp-controller="Staff" asp-action="Index" class="nav-item nav-link @(ViewContext.RouteData.Values["Controller"]!.ToString() == "Staff" && ViewContext.RouteData.Values["Action"]!.ToString() == "Index" ? "active" : "")">Staff</a>
+                    </div>
+                    <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="btn btn-primary py-2 px-4">Admin Panel</a>
+                </div>
+            </nav>
+
+            @await Component.InvokeAsync("Slider")
+        </div>
+    }
+    else
+    {
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Restoran</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a asp-area="" asp-controller="Home" asp-action="Index" class="nav-item nav-link @(ViewContext.RouteData.Values["Controller"]!.ToString() == "Home" && ViewContext.RouteData.Values["Action"]!.ToString() == "Index" ? "active" : "")">Home</a>
+                        <a asp-area="" asp-controller="About" asp-action="Index" class="nav-item nav-link @(ViewContext.RouteData.Values["Controller"]!.ToString() == "About" && ViewContext.RouteData.Values["Action"]!.ToString() == "Index" ? "active" : "")">About</a>
+                        <a asp-area="" asp-controller="Service" asp-action="Index" class="nav-item nav-link @(ViewContext.RouteData.Values["Controller"]!.ToString() == "Service" && ViewContext.RouteData.Values["Action"]!.ToString() == "Index" ? "active" : "")">Service</a>
+                        <a asp-area="" asp-controller="Menu" asp-action="Index" class="nav-item nav-link @(ViewContext.RouteData.Values["Controller"]!.ToString() == "Menu" && ViewContext.RouteData.Values["Action"]!.ToString() == "Index" ? "active" : "")">Menu</a>
+                        <a asp-area="" asp-controller="Staff" asp-action="Index" class="nav-item nav-link @(ViewContext.RouteData.Values["Controller"]!.ToString() == "Staff" && ViewContext.RouteData.Values["Action"]!.ToString() == "Index" ? "active" : "")">Staff</a>
+                    </div>
+
+                    <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="btn btn-primary py-2 px-4">Admin Panel</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    @if (controllerName == "About")
+                    {
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">About Us</h1>
+                    }
+                    else if (controllerName == "Service")
+                    {
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">Service</h1>
+                    }
+                    else if (controllerName == "Menu")
+                    {
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">Menu</h1>
+                    }
+                    else if (controllerName == "Staff")
+                    {
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">Staff</h1>
+                    }
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">@controllerName</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    }
+}

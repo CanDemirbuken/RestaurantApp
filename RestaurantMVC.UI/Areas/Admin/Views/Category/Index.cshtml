@@ -1,0 +1,44 @@
+﻿@model IEnumerable<CategoryViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Categories</h1>
+<h4>Use + button to add new category.</h4>
+<div class="table-responsive">
+    <table class="table table-bordered table-striped table-vcenter">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th class="text-center" style="width: 100px;">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="fw-semibold fs-sm">
+                        <em class="text-muted">@item.Id</em>
+                    </td>
+                    <td class="fw-semibold fs-sm">
+                        <em class="text-muted">@item.Name</em>
+                    </td>
+                    <td class="text-center">
+                        <div class="btn-group">
+                            <a type="button" class="btn btn-sm btn-alt-secondary" data-bs-toggle="tooltip" title="Edit" asp-area="Admin" asp-controller="Category" asp-action="Update" asp-route-id="@item.Id">
+                                <i class="fa fa-fw fa-pencil-alt"></i>
+                            </a>
+                            <a type="button" class="btn btn-sm btn-alt-secondary" data-bs-toggle="tooltip" title="Delete" asp-area="Admin" asp-controller="Category" asp-action="Delete" asp-route-id="@item.Id">
+                                <i class="fa fa-fw fa-times"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <a asp-area="Admin" asp-controller="Category" asp-action="Add" class="btn btn-sm btn-alt-secondary"><i class="far fa-2x fa-square-plus"></i></a>
+    </table>
+</div>

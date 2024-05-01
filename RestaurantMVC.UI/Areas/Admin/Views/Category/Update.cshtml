@@ -1,0 +1,27 @@
+﻿@model CategoryUpdateViewModel
+
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<<div class="block block-rounded">
+    <div class="block-header block-header-default">
+        <h3 class="block-title">Update Category</h3>
+    </div>
+    <div class="block-content">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+                <form asp-area="Admin" asp-controller="Category" asp-action="Update" method="post">
+                    <div class="mb-4">
+                        <label asp-for="Name" class="form-label" for="one-ecom-product-name"></label>
+                        <input type="text" class="form-control" id="one-ecom-product-name" name="Name" asp-for="Name">
+                    </div>
+                    <div class="mb-4">
+                        <button type="submit" class="btn btn-alt-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

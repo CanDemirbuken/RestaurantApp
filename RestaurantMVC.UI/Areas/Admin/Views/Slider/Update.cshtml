@@ -1,0 +1,67 @@
+﻿@model SliderViewModel
+
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="block block-rounded">
+    <div class="block-header block-header-default">
+        <h3 class="block-title">Add Slider</h3>
+    </div>
+    <div class="block-content">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+                <form asp-area="Admin" asp-controller="Slider" asp-action="Update" method="post" enctype="multipart/form-data">
+                    <input type="hidden" asp-for="@Model.Id"/>
+                    <div class="mb-4">
+                        <label asp-for="Title" class="form-label" for="one-ecom-product-name"></label>
+                        <input type="text" class="form-control" id="one-ecom-product-name" name="Title" asp-for="Title">
+                    </div>
+                    <div class="mb-4">
+                        <label asp-for="Description" class="form-label"></label>
+                        <textarea id="js-ckeditor" asp-for="Description" name="Description"></textarea>
+                    </div>
+                    <div class="mb-4">
+                        <label asp-for="ButtonText" class="form-label" for="one-ecom-product-name"></label>
+                        <input type="text" class="form-control" id="one-ecom-product-name" name="ButtonText" asp-for="ButtonText">
+                    </div>
+                    <div class="mb-4">
+                        <label asp-for="ButtonLink" class="form-label" for="one-ecom-product-name"></label>
+                        <input type="text" class="form-control" id="one-ecom-product-name" name="ButtonLink" asp-for="ButtonLink">
+                    </div>
+                    <div class="mb-4">
+                        <input type="file" asp-for="ImageURL" class="form-control">
+                        @if (Model.ImageURL != null)
+                        {
+                            <img src="~/upload_img/@Model.ImageURL" class="form-control" alt="@Model.Title" style="max-width: 200px; max-height: 200px;" />
+                        }
+                        else
+                        {
+                            <img src="~/upload_img/default.png" class="form-control" alt="@Model.Title" style="max-width: 200px; max-height: 200px;" />
+                        }
+                        <span asp-validation-for="ImageURL" class="text-danger"></span>
+                    </div>
+                    <div class="mb-4">
+                        <button type="submit" class="btn btn-alt-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+<script>
+    ClassicEditor
+        .create(document.querySelector('#js-ckeditor'))
+        .then(editor => {
+            editor.model.document.on('change:data', () => {
+                const data = editor.getData();
+                console.log(data);
+            });
+        })
+        .catch(error => {
+            console.error(error);
+        });
+</script>

@@ -1,0 +1,17 @@
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.BusinessLayer\bin\Debug\net8.0\RestaurantMVC.BusinessLayer.deps.json
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.BusinessLayer\bin\Debug\net8.0\RestaurantMVC.BusinessLayer.runtimeconfig.json
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.BusinessLayer\bin\Debug\net8.0\RestaurantMVC.BusinessLayer.dll
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.BusinessLayer\bin\Debug\net8.0\RestaurantMVC.BusinessLayer.pdb
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.BusinessLayer\bin\Debug\net8.0\RestaurantMVC.Core.dll
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.BusinessLayer\bin\Debug\net8.0\RestaurantMVC.Core.pdb
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.BusinessLayer\obj\Debug\net8.0\RestaurantMVC.BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.BusinessLayer\obj\Debug\net8.0\RestaurantMVC.BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.BusinessLayer\obj\Debug\net8.0\RestaurantMVC.BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.BusinessLayer\obj\Debug\net8.0\RestaurantMVC.BusinessLayer.AssemblyInfo.cs
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.BusinessLayer\obj\Debug\net8.0\RestaurantMVC.BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.BusinessLayer\obj\Debug\net8.0\RestaurantMVC.BusinessLayer.csproj.CopyComplete
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.BusinessLayer\obj\Debug\net8.0\RestaurantMVC.BusinessLayer.dll
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.BusinessLayer\obj\Debug\net8.0\refint\RestaurantMVC.BusinessLayer.dll
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.BusinessLayer\obj\Debug\net8.0\RestaurantMVC.BusinessLayer.pdb
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.BusinessLayer\obj\Debug\net8.0\RestaurantMVC.BusinessLayer.genruntimeconfig.cache
+C:\Users\yasar\source\repos\RestaurantMVC\RestaurantMVC.BusinessLayer\obj\Debug\net8.0\ref\RestaurantMVC.BusinessLayer.dll

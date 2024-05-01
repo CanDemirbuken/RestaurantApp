@@ -1,0 +1,57 @@
+﻿@model IEnumerable<StaffViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Staffs</h1>
+<h4>Use + button to add new staff.</h4>
+<div class="table-responsive">
+    <table class="table table-bordered table-striped table-vcenter">
+        <thead>
+            <tr>
+                <th class="text-center" style="width: 100px;">
+                    <i class="far fa-user"></i>
+                </th>
+                <th>Full Name</th>
+                <th style="width: 30%;">Title</th>
+                <th class="text-center" style="width: 100px;">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="text-center">
+                        @if (item.ImageURL != null)
+                        {
+                            <img src="~/upload_img/@item.ImageURL" style="max-width: 100px; max-height: 100px;" alt="@item.Title" class="img-avatar img-avatar48" />
+                        }
+                        else
+                        {
+                            <img src="~/upload_img/default.png" style="max-width: 100px; max-height: 100px;" alt="@item.Title" class="img-avatar img-avatar48" />
+                        }
+                    </td>
+                    <td class="fw-semibold fs-sm">
+                        <em class="text-muted">@item.FirstName @item.LastName</em>
+                    </td>
+                    <td class="fw-semibold fs-sm">
+                        <em class="text-muted">@item.Title</em>
+                    </td>
+                    <td class="text-center">
+                        <div class="btn-group">
+                            <a type="button" class="btn btn-sm btn-alt-secondary" data-bs-toggle="tooltip" title="Edit" asp-area="Admin" asp-controller="Staff" asp-action="Update" asp-route-id="@item.Id">
+                                <i class="fa fa-fw fa-pencil-alt"></i>
+                            </a>
+                            <a type="button" class="btn btn-sm btn-alt-secondary" data-bs-toggle="tooltip" title="Delete" asp-area="Admin" asp-controller="Staff" asp-action="Delete" asp-route-id="@item.Id">
+                                <i class="fa fa-fw fa-times"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <a asp-area="Admin" asp-controller="Staff" asp-action="Add" class="btn btn-sm btn-alt-secondary"><i class="far fa-2x fa-square-plus"></i></a>
+    </table>
+</div>

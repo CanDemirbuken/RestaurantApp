@@ -1,0 +1,30 @@
+﻿<!doctype html>
+<html lang="en">
+
+@await Html.PartialAsync("~/Areas/Admin/Views/Layout/HeadPartial.cshtml")
+
+<body>
+    <div id="page-container" class="sidebar-o sidebar-dark enable-page-overlay side-scroll page-header-fixed main-content-narrow">
+        <nav id="sidebar" aria-label="Main Navigation">
+
+            @await Html.PartialAsync("~/Areas/Admin/Views/Layout/SideHeaderPartial.cshtml")
+            @await Html.PartialAsync("~/Areas/Admin/Views/Layout/SideMenuPartial.cshtml")
+
+        </nav>
+
+        @await Html.PartialAsync("~/Areas/Admin/Views/Layout/HeaderPartial.cshtml")
+
+        <main id="main-container">
+            <div class="content">
+                @RenderBody()
+            </div>
+        </main>
+
+        @await Html.PartialAsync("~/Areas/Admin/Views/Layout/FooterPartial.cshtml")
+
+    </div>
+
+    @await Html.PartialAsync("~/Areas/Admin/Views/Layout/ScriptsPartial.cshtml")
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
